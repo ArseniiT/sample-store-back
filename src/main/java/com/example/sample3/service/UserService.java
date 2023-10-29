@@ -24,7 +24,10 @@ public class UserService {
     public User save(UserDto userDto) {
         User user =  new User()
                 .setFirstName(userDto.getFirstName())
+                .setSecondName(userDto.getSecondName())
                 .setBirthday(userDto.getBirthday())
+                .setOrderId(userDto.getOrderId())
+                .setPhotoId(userDto.getPhotoId())
                 .setId(UUID.randomUUID().toString())
                 .setCreatedAt(LocalDateTime.now());
 
