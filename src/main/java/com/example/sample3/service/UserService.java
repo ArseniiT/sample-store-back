@@ -28,6 +28,7 @@ public class UserService {
                 .setBirthday(userDto.getBirthday())
                 .setOrderId(userDto.getOrderId())
                 .setPhotoId(userDto.getPhotoId())
+                // TODO add uuid-ossp module directly to Postgresql DB
                 .setId(UUID.randomUUID().toString())
                 .setCreatedAt(LocalDateTime.now());
 
